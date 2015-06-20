@@ -1,0 +1,7 @@
+Observaciones de requerimientos funcionales y casos de uso
+----------------------------------------------------------
+- No tienen claro lo que es requerimientos funcionales y no funcionales, leer la teoría
+- Los casos de uso son muy pocos
+- Faltan detallar los casos de uso
+- No han entregado a tiempo por lo que no tienen nota igual lo tienen que arreglar 
+PARA SER DOS PERSONAS HAN HECHO MUY POCO
