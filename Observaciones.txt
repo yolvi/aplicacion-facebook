@@ -1,0 +1,8 @@
+ Observaciones Casos de Uso
+--------------------------------------------------------------
+- No entregaron a tiempo
+
+Observacioens segundo avance
+------------------------------------------------------
+- Han cambiado completamente el contenido (commits) del repositorio, por unica vez estoy volviendo a clonar.
+- No presentan avance de desarrollo apreciable, deben tener más commits y mas frecuentes.
