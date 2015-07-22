@@ -6,3 +6,8 @@ Observacioens segundo avance
 ------------------------------------------------------
 - Han cambiado completamente el contenido (commits) del repositorio, por unica vez estoy volviendo a clonar.
 - No presentan avance de desarrollo apreciable, deben tener más commits y mas frecuentes.
+
+Observaciones tercer avance
+----------------------------------------------------------------
+- Pocos commits
+- Aunque no se conecte aun a facebook, ya debe funcionar la logica
