@@ -1,218 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="">
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>TES DE LA MUERTE</title>
+<link rel="shortcut icon" href="img/cruz.png" type="image/png" />
 
-    <title>Test</title>
+<style type="text/css">
 
-    <!-- Bootstrap core CSS -->
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+body {
+	background-color: #000;
+}
+.R {
+	color: #6A0000;
+	text-align: center;
+	font-size: 24px;
+}
 
-    <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
+.center {
+	top: 500 px;
+	left:3000 px;
+}
+</style>
+</head>
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
-    <div class="container">
-
-      <div class="starter-template">
-        <h1>Test de la Muerte</h1>
-        <br>
-        <p class="lead">Descubre cómo influyen tus hábitos, tu entorno a tu esperanza de vida y conoce cuántos años aproximadamente vivirás.</p>
-      </div>
-
-      <form class="form-horizontal" role="form" method="post" action="calcular.php">
-        <div class="row">
-
-          <div class="col-xs-6">
-
-            <div class="form-group">
-              <label class="col-sm-4 control-label">Sexo</label>
-              <div class="col-sm-8">
-                <select class="form-control" name="sexo" id="sexo">
-                  <option value="0">Seleccione</option>
-                  <option value="Varon">Váron</option>
-                  <option value="Mujer">Mujer</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="col-sm-4 control-label">Horas de sueño al día</label>
-              <div class="col-sm-8">
-                <select class="form-control" name="dormir" id="dormir">
-                  <option value="0">Seleccione una respuesta</option>
-                  <option value="1">Menos de 6 Horas</option>
-                  <option value="2">De 6 - 7 Horas </option>
-                  <option value="3">De 7 - 8 Horas </option>
-                  <option value="4">Más de 8 Horas</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="col-sm-4 control-label">¿Fumas?</label>
-              <div class="col-sm-8">
-                <select class="form-control" name="fuma" id="fuma">
-                  <option value="0">Seleccione una respuesta</option>
-                  <option value="Nunca">Nunca</option>
-                  <option value="1">Un paquete de cigarros diario</option>
-                  <option value="2">Dos o mas paquetes por día</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="col-sm-4 control-label">Estrés</label>
-              <div class="col-sm-8">
-                <select class="form-control" name="estres" id="estres">
-                  <option value="0">Seleccione una respuesta</option>
-                  <option value="1">Casi nunca</option>
-                  <option value="2">De vez en cuando</option>
-                  <option value="3">Casi todo el tiempo</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="col-sm-4 control-label">Actividad física</label>
-              <div class="col-sm-8">
-                <select class="form-control" name="actividadFisica" id="actividadFisica">
-                  <option value="0">Seleccione una respuesta</option>
-                  <option value="1">Una hora por día</option>
-                  <option value="2">Promedio de 30 minutos intensos</option>
-                  <option value="3">10 minutos de caminata</option>
-                  <option value="4">Sedentario</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="col-sm-6 control-label">¿Cuánto alcohol toma (gradación entre 5° y 15°)?</label>
-              <div class="col-sm-6">
-                <select class="form-control" name="alcohol" id="alcohol">
-                  <option value="0">Seleccione una respuesta</option>
-                  <option value="1">Soy abstemio</option>
-                  <option value="2">Una a dos copas por día</option>
-                  <option value="3">Un litro diario</option>
-                  <option value="4">Más de un litro diario</option>
-                </select>
-              </div>
-            </div>
-          </div>
-      
-          <div class="col-xs-6">
-
-            <div class="form-group">
-                <label class="col-sm-4 control-label">Felicidad</label>
-                <div class="col-sm-8">
-                  <select class="form-control" name="felicidad" id="felicidad">
-                    <option value="0">Seleccione una respuesta</option>
-                    <option value="1">Generalmente estoy muy feliz</option>
-                    <option value="2">Me siento satisfecho</option>
-                    <option value="3">A menudo soy infeliz</option>
-                    <option value="4">Soy infeliz</option>
-                  </select>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label class="col-sm-4 control-label">Ansiedad</label>
-                <div class="col-sm-8">
-                  <select class="form-control" name="ansiedad" id="ansiedad">
-                    <option value="0">Seleccione una respuesta</option>
-                    <option value="1">Raramente estoy ansioso</option>
-                    <option value="2">Frecuentemente ansioso</option>
-                    <option value="3">Siempre ansioso</option>
-                    <option value="4">Tengo ataques de pánico</option>
-                  </select>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label class="col-sm-4 control-label">Satisfacción laboral</label>
-                <div class="col-sm-8">
-                  <select class="form-control" name="labor" id="labor">
-                    <option value="0">Seleccione una respuesta</option>
-                    <option value="1">Disfruto de mi trabajo</option>
-                    <option value="2">No mucho</option>
-                    <option value="3">No me gusta mi trabajo</option>
-                    <option value="4">Odio mi trabajo</option>
-                  </select>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-4 control-label">Vida social</label>
-                <div class="col-sm-8">
-                  <select class="form-control" name="social" id="social">
-                    <option value="0">Seleccione una respuesta</option>
-                    <option value="1">Tengo muy buenos amigos</option>
-                    <option value="2">Tengo algunos amigos</option>
-                    <option value="3">No tengo amigos</option>
-                  </select>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-4 control-label">En una situación tensa</label>
-                <div class="col-sm-8">
-                  <select class="form-control" name="situacion" id="situacion">
-                    <option value="0">Seleccione una respuesta</option>
-                    <option value="1">Generalmente uso el dialogo</option>
-                    <option value="2">Uso la fuerza</option>
-                    <option value="3">Agacho la cabeza y me voy</option>
-                  </select>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-4 control-label">Temperamento colérico</label>
-                <div class="col-sm-8">
-                  <select class="form-control" name="temperamento" id="temperamento">
-                    <option value="0">Seleccione una respuesta</option>
-                    <option value="1">Muy poco</option>
-                    <option value="2">Regular</option>
-                    <option value="3">Tengo ún temperamento alto</option>
-                  </select>
-                </div>
-            </div>
-
-          </div>
-        </div>
-        <div class="col-sm-12">
-          <div class="col-sm-6">
-          </div>
-          <div class="col-sm-6">
-            <button type="submit" class="btn btn-danger">Calcular</button>
-          </div>
-        </div>
-      </form>
-
-    </div><!-- /.container -->
+<body >
+<table width="1408" border="0">
+  <tr>
+    <td width="380"><img src="img/mostro.gif" width="319" height="275"></td>
+    <td width="561"><div align="center"><a href="entrar.html"><img src="img/entrar1.gif" width="471" height="407" class="center"></a></div></td>
+    <td width="453"><div align="center"><img src="img/calabera.gif" width="332" height="242"></div></td>
+  </tr>
+</table>
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="assets/js/jquery-1.11.3.min.js"></script>
-    <script src="dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+<div align="center"><span class="R">Bienvenidos a elmuerto.besaba.com, Descubre cómo influyen tus hábitos,</br>
+ tu entorno a tu esperanza de vida y conoce cuántos años aproximadamente viviras...</span></div>
+</body>
 </html>
