@@ -10,6 +10,7 @@
     <link rel="icon" href="">
 
     <title>Funeral</title>
+    <link rel="shortcut icon" href="img/cruz.png" type="image/png" />
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -102,7 +103,7 @@ echo "$vector[$numero]" ;
           del cadáver en el mensionado cementerio, por cuyos favores les quedarán muy agradecidos. 
         </p>
         <p>&nbsp;</p>
-        <p>compartir con mis amigos:<a href="https://www.facebook.com/sharer/sharer.php?u=http://elmuerto.hol.es/"><img src="img/compartir.png" width="92" height="22"></a></p>
+        <p>compartir con mis amigos:<a href="https://www.facebook.com/sharer/sharer.php?u=http://elmuerto.besaba.com/"><img src="img/compartir.png" width="92" height="22"></a></p>
         <p>&nbsp;</p>
       </div>
     </div>

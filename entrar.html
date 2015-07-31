@@ -9,7 +9,8 @@
     <meta name="author" content="">
     <link rel="icon" href="">
 
-    <title>Test</title>
+    <title>la muerte</title>
+    <link rel="shortcut icon" href="img/cruz.png" type="image/png" />
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
